@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<!-- saved from url=(0191)file:///C:/Users/Jerry/Desktop/JerryZhangZZY.github.io-main/%E8%AF%B7%E5%81%87%E5%A4%96%E5%87%BA%E3%80%81%E8%BF%94%E6%A0%A1%E6%9D%83%E9%99%90%E6%9F%A5%E8%AF%A2%E9%80%9A%E8%A1%8C%E7%A0%81.html -->
+<html lang="en" style="font-size: 95.4667px;"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1">
+    <title>请假外出、返校权限查询通行码</title>
+    <script>
+        function IEVersion() {
+            var userAgent = navigator.userAgent; //取得浏览器的userAgent字符串  
+            var isIE = userAgent.indexOf("compatible") > -1 && userAgent.indexOf("MSIE") > -1; //判断是否IE<11浏览器  
+            var isEdge = userAgent.indexOf("Edge") > -1 && !isIE; //判断是否IE的Edge浏览器  
+            var isIE11 = userAgent.indexOf('Trident') > -1 && userAgent.indexOf("rv:11.0") > -1;
+            if (isIE) {
+                var reIE = new RegExp("MSIE (\\d+\\.\\d+);");
+                reIE.test(userAgent);
+                var fIEVersion = parseFloat(RegExp["$1"]);
+                if (fIEVersion == 7) {
+                    return 7;
+                } else if (fIEVersion == 8) {
+                    return 8;
+                } else if (fIEVersion == 9) {
+                    return 9;
+                } else if (fIEVersion == 10) {
+                    return 10;
+                } else {
+                    return 6; //IE版本<=7
+                }
+            } else if (isEdge) {
+                return 'edge'; //edge
+            } else if (isIE11) {
+                return 11; //IE11  
+            } else {
+                return false; //不是ie浏览器
+            }
+        }
+
+        if (window.location.href.indexOf("opendebug") !== -1) {
+            console.log("调试模式");
+        } else {
+            if (window.location.href.indexOf("icce") !== -1 && IEVersion()) { //IE跳转
+                window.location.href = '/v2/static/html/download.html';
+            } else if (IEVersion()) { // 判断ie版本 低于11的跳转
+                if (IEVersion() != 'edge' && IEVersion() < 11) {
+                    setTimeout(function() {
+                        window.location.href = '/v2/static/html/download.html';
+                    }, 300);
+                }
+            } else {
+                setTimeout(function() {
+                    if (!history.pushState) {
+                        window.location.href = '/v2/static/html/download.html';
+                    }
+                }, 300);
+            }
+        }
+    </script>
+    <style>
+
+         
+
+
+        .mobile_pluginnames_hide .pluginnames{
+            min-height: .1rem !important;
+            padding: 0 15px !important;
+        }       
+
+        .frame_load_img {
+            display: inline-block;
+            width: 50px;
+            animation: haha1 1.5s linear infinite;
+            -webkit-animation: haha1 1s linear infinite;
+        }
+        
+        .frame-loader {
+            position: fixed;
+            z-index: 999;
+            top: 50%;
+            left: 50%;
+            transform: translate3d(-50%, -50%, 0);
+        }
+        
+        @-webkit-keyframes haha1 {
+            0% {
+                -webkit-transform: rotate(0deg);
+            }
+            25% {
+                -webkit-transform: rotate(90deg);
+            }
+            50% {
+                -webkit-transform: rotate(180deg);
+            }
+            75% {
+                -webkit-transform: rotate(270deg);
+            }
+            100% {
+                -webkit-transform: rotate(360deg);
+            }
+        }
+        
+        #__vconsole .vc-content {
+            line-height: 12px;
+        }
+    </style>
+    <link href="./index_files/app.95a2b213cdf04bb09e24.css" rel="preload" as="style">
+    <link href="./index_files/chunk-vendors.9430c3378d9dea0e96ba.css" rel="preload" as="style">
+    <link href="./index_files/chunk-vendors.9430c3378d9dea0e96ba.css" rel="stylesheet">
+    <link href="./index_files/app.95a2b213cdf04bb09e24.css" rel="stylesheet">
+    <link rel="shortcut icon" href="file:///C:/Users/Jerry/Desktop/JerryZhangZZY.github.io-main/index_files/3333.jpg">
+    <link rel="stylesheet" type="text/css" href="./index_files/chunk-7a863c7b.e36d395ddabbb71be68a.css">
+    <link rel="stylesheet" type="text/css" href="./index_files/chunk-5a493e9a.dfbeb07ef5efde6704a1.css">
+
+
+    
+</head>
+
+<body class="">
+    <div id="wxform">
+        <!-- <div class="top">
+            <!-- <div class="W_onetop" style="width: 50%;">
+                申请表单
+                <p style="display: none;">1</p>
+            </div> -->
+            <!-- <span class="line" style="width: 45%; left: 5.33333px;"></span> -->
+        <!-- </div> -->
+        <div class="forms">
+            <div style="height: 0px;"></div>
+            <div class="toptabla" style="
+    padding-left: 0px;
+    padding-right: 0px;
+"><div class="toptabla_con" style="
+    padding-left: 10px;
+    padding-right: 10px;
+"><div class="formsTop_left"><img src="./index_files/wunai.png" alt=""> <p>当前部门：国际学院</p></div> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACoAAAAYCAYAAACMcW/9AAAB4ElEQVRYR83VO0sDQRAA4Nm9LfMbBBEsBC1EEFGUJblcOEihP8Je8YnYiPhErf0Rlja729j4C6wUE1+o+AAtlMiaHTmJcsYkbi6R3FVX7Mx+Nzs7RwAAhBCCEOIG73F8KKU+UUqNI+JuHIEh03UAPUDE4ZhD34mUcg8AxmIPVUoNIOJhzKH7JABKKScAYDuOWES8SiQSnZ/QEnYaADZihj1mjI1wzm+/oaUxtUQIWYwJNo+IQ+l0+jrw/ICWKrsAAMstxt5prdt833/7cvyCthpLCDlzHGcgOO5wsSpCW4g9oZS6yWTyvPxEq0JbgL0wxnR5nvdSqe1qQoMApdQMIq7/c8/eaK3bwz1ZV0W/Fiul5hFx5Z+wuWKxOJTJZG5q5f+zoqE5OwcAq03G5hhjg+UXJ9LRh4Oa3Aa3hUKhI5vNvtp8vHVFm9wGl4yxXs75gw2y4sC3CWywsnmtdb/v+/c2e9Uc+DYJlFKTiLhlsza05hIAul3Xfa4z7vcvtJ4EQohZQsiaTUzwxwGAvlQq9WizPtJ4qpXYEpsv9eRTFGTkHi3fTEo5BQCbVRAXANAT5bjD+eq+9dUqUgV7ZIxJep53F7WSDV+mShsLIUYppSPGmASl9NRxnB3OeaFRZBD/ATVSvUcGtzefAAAAAElFTkSuQmCC" alt="" class="toptabla_img"></div></div>
+
+<div class="toptabla" style="
+    padding-left: 0px;
+    padding-right: 0px;
+">
+                <div class="toptabla_con" style="margin-top: 10px;margin-bottom: 10px;">
+                    <div class="formsTop_left"><img src="data:image/png;base64,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" alt="">
+                        <p class="">请假外出、返校权限查询</p>
+                    </div>
+                    
+                </div>
+            </div>
+
+
+            <div>
+                <div class="m_formList">
+                    <!---->
+                    <div>
+                        <div class="pluginnames"><span style="color: rgb(135, 135, 135); font-size: 14px; font-family: 微软雅黑; line-height: 22px;">
+              姓名
+            </span>
+                            <!---->
+                        </div>
+                        <!---->
+                        <div class="plugin-allbox dplugin-mobile-rinput">
+                            <div data-key="User_3" class="dplugin-box" style="margin-top: 0px; margin-bottom: 0px; text-align: center;">
+                                <div class="dplugin-mobile dplugin-doneplugin dplugin-mobile-dinput">
+                    <span id="stuname" class="doneplugin-value doneplugin-value-userview" style="font-size: 14px; font-family: 微软雅黑; font-weight: normal; font-style: normal; color: rgb(96, 98, 102); text-decoration: none; text-align: center; line-height: 15px; letter-spacing: 0px;">张泽宇</span>
+                    <script type="text/javascript">
+                            function getName(){
+                                var name = "张泽宇";
+                                document.getElementById("stuname").innerHTML = name;
+                            };
+                            getName();
+                    </script>
+                </div>
+                            </div>
+                            <!---->
+                        </div>
+                    </div>
+                    <!---->
+                    <div>
+                        <div class="pluginnames"><span style="color: rgb(135, 135, 135); font-size: 14px; font-family: 微软雅黑; line-height: 22px;">照片</span>
+                            <!---->
+                        </div>
+                        <!---->
+                        <div class="plugin-allbox"><div data-key="Avatar_41" class="dplugin-box" style="margin-top: 0px; margin-bottom: 0px; text-align: center;"><div class="dplugin-mobile dplugin-mobile-dAvatar"><div class="dplugin-mobile-addfileed-box" style="height: 1rem; width: 1rem;"><!----> <div class="dplugin-mobile-addfileed"><img width="100%" height="100%" src="./index_files/myphoto.jpg"></div></div> <!----> <div class="clear"></div></div> <!----> <!----></div> <!----></div>
+                        
+
+                        <div class="mobile_pluginnames_hide">
+                            <div class="pluginnames">
+                                <span style="color: rgb(135, 135, 135); font-size: 14px; font-family: 微软雅黑; line-height: 22px;"></span> <!----></div> <!----> 
+                                <div class="plugin-allbox"><div data-key="Image_36" class="dplugin-box" style="margin-top: 0px; margin-bottom: 0px; text-align: left;">
+                                    <div class="dplugin-mobile dplugin-mobile-dImage dImageview"><img src="./index_files/3916676.gif" style="width: 100%; height: 100%;">
+                                    </div> <!----> <!---->
+                                </div> <!---->
+                            </div>
+                        </div>
+
+                        
+                    </div>
+                    <!---->
+                    <div>
+                        <div class="pluginnames"><span style="color: rgb(135, 135, 135); font-size: 14px; font-family: 微软雅黑; line-height: 22px;">
+              状态码
+            </span>
+                            <!---->
+                        </div>
+                        <!---->
+                        <div class="plugin-allbox" plugin="[object Object]">
+                            <div data-key="Qrcode_11" class="dplugin-box" style="margin-top: 0px; margin-bottom: 0px; width: 100%; text-align: center; height: 100%; overflow-x: auto;">
+                                <div class="dplugin-mobile"><img src="./index_files/img.PNG" height="150" width="150" style="height: 150px; width: 150px;" alt=""></div>
+                            </div>
+                            <!---->
+                        </div>
+                    </div>
+                    <div class="mobile_pluginnames_hide">
+                        <div class="pluginnames"><span style="color: rgb(135, 135, 135); font-size: 2px; font-family: 微软雅黑; line-height: 4px;"></span>
+                            <!---->
+                        </div>
+                        <!---->
+                        <div class="plugin-allbox dplugin-mobile-rinput">
+                            <div data-key="Input_12" class="dplugin-box" style="margin-top: 0px; margin-bottom: 0px; text-align: center;">
+                                <div class="dplugin-mobile dplugin-mobile-dinput dinput-vie dplugin-mobile-dinput-focusalert" style="font-size: 18px; font-family: 微软雅黑; font-weight: bold; font-style: normal; color: red; text-decoration: none; text-align: center; line-height: 20px; letter-spacing: 0px;"><span id="in_out" style="font-size: 18px; font-family: 微软雅黑; font-weight: bold; font-style: normal; color: green; text-decoration: none; text-align: center; line-height: 20px; letter-spacing: 0px;">允许出校</span></div>
+                            </div>
+                            <!---->
+                        </div>
+                    </div>
+                    <div>
+                        <div class="pluginnames"><span style="color: rgb(135, 135, 135); font-size: 14px; font-family: 微软雅黑; line-height: 22px;">
+              学工号
+            </span>
+                            <!---->
+                        </div>
+                        <!---->
+                        <div class="plugin-allbox dplugin-mobile-rinput">
+                            <div data-key="User_5" class="dplugin-box" style="margin-top: 0px; margin-bottom: 0px; text-align: center;">
+                                <div class="dplugin-mobile dplugin-doneplugin dplugin-mobile-dinput"><span id="stuum" class="doneplugin-value doneplugin-value-userview" style="font-size: 14px; font-family: 微软雅黑; font-weight: normal; font-style: normal; color: rgb(96, 98, 102); text-decoration: none; text-align: center; line-height: 15px; letter-spacing: 0px;">2019213482</span>
+                    <script type="text/javascript">
+                        document.getElementById("stuum").innerHTML ="2019213482";
+                    </script>
+                </div>
+                            </div>
+                            <!---->
+                        </div>
+                    </div>
+                    <!---->
+                    <div>
+                        <div class="pluginnames"><span style="color: rgb(135, 135, 135); font-size: 14px; font-family: 微软雅黑; line-height: 22px;">
+              出入校时间
+            </span>
+                            <!---->
+                        </div>
+                        <!---->
+                        <div class="plugin-allbox">
+                            <div data-key="Calendar_15" class="dplugin-box" style="margin-top: 0px; margin-bottom: 0px; text-align: center;">
+                                <div id="time" style="font-size: 14px; font-family: 微软雅黑; font-weight: normal; font-style: normal; color: rgb(96, 98, 102); text-decoration: none; text-align: center; line-height: 20px; letter-spacing: 0px;">2021-11-19	00:48:55	</div>
+                                <script type="text/javascript">
+                                    function time() {
+                                        var date = new Date();
+                                        year = date.getFullYear();
+                                        month = date.getMonth() + 1 < 10 ? "0" + (date.getMonth() + 1) : (date.getMonth() + 1);
+                                        day = date.getDate() < 10 ? "0" + date.getDate() : date.getDate();
+                                        hours = date.getHours() < 10 ? "0" + date.getHours() : date.getHours();
+                                        minutes = date.getMinutes() < 10 ? "0" + date.getMinutes() : date.getMinutes();
+                                        seconds = date.getSeconds() < 10 ? "0" + date.getSeconds() : date.getSeconds();
+                                        document.getElementById("time").innerHTML = year + "-" + month + "-" + day + "\t" + hours + ":" + minutes + ":" + seconds + "\t";
+                                    };
+                                    time();
+                                </script>
+                            </div>
+                            <!---->
+                        </div>
+                    </div>
+                    <!---->
+                    <div style="display: none;">
+                        <ul>
+                            <li><span>动态转化：</span>
+                                <div data-key="Conversion_17" class="dplugin-box" style="margin-top: 0px; margin-bottom: 0px; text-align: left;">
+                                    <!---->
+                                </div>
+                            </li>
+                            <!---->
+                            <!---->
+                            <li><span>数据源：</span>
+                                <div data-key="DataSource_23" class="dplugin-box" plugin="[object Object]" style="margin-top: 0px; margin-bottom: 0px; text-align: left;">
+                                    <div>
+                                        <div class="el-dialog__wrapper" style="display: none;">
+                                            <div role="dialog" aria-modal="true" aria-label="同步数据" class="el-dialog el-dialog--center rTbaleDialog" style="margin-top: 15vh; width: 90%;">
+                                                <div class="el-dialog__header"><span class="el-dialog__title">同步数据</span>
+                                                    <!---->
+                                                </div>
+                                                <!---->
+                                                <div class="el-dialog__footer"><span class="dialog-footer"><button type="button" class="el-button el-button--default"><!----><!----><span>取 消</span></button> <button type="button" class="el-button el-button--primary"><!----><!----><span>确 定</span></button></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <!---->
+<div class=""><div class="pluginnames"><span style="color: rgb(135, 135, 135); font-size: 14px; font-family: 微软雅黑; line-height: 22px;">学院</span> <!----></div> <!----> <div class="plugin-allbox"><div data-key="User_22" class="dplugin-box" style="margin-top: 0px; margin-bottom: 0px; text-align: center;"><div class="dplugin-mobile dplugin-doneplugin dplugin-mobile-dinput"><span class="doneplugin-value doneplugin-value-userview" style="font-size: 14px; font-family: 微软雅黑; font-weight: normal; font-style: normal; color: rgb(96, 98, 102); text-decoration: none; text-align: center; line-height: 15px; letter-spacing: 0px;">
+						国际学院
+					</span></div></div> <!----></div></div>
+                </div>
+                <!---->
+            </div>
+            <div class="wxformbtn m_start_btn"><button class="draftdiv active" onclick="reload();">更多</button>
+                <script type="text/javascript">
+                    var stat = 0;
+
+                    function reload() {
+                        if (stat == 0) {
+                            document.getElementById("in_out").innerHTML = '允许入校';
+                            stat = 1;
+                        } else {
+                            document.getElementById("in_out").innerHTML = '允许出校';
+                            stat = 0;
+                        }
+
+                    }
+                </script>
+                <div class="wxformbtn_center">
+                    <!---->
+                </div>
+                <!---->
+            </div>
+        </div>
+        <div class="processimg"><img src="data:image/png;base64,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" alt="" class="imgbtn">
+            <div class="svg"><img src="./index_files/svg.png" alt=""></div>
+        </div>
+        <div class="showBpmn_class" style="display: none;"></div>
+        <!---->
+        <!---->
+        <!---->
+        <!---->
+        <!---->
+        <!---->
+        <!---->
+        <!---->
+        <div class="el-dialog__wrapper" style="display: none;">
+            <div role="dialog" aria-modal="true" aria-label="添加人员" class="el-dialog el-dialog--center dialog_search_user" style="margin-top: 15vh; width: 300px;">
+                <div class="el-dialog__header"><span class="el-dialog__title">添加人员</span><button type="button" aria-label="Close" class="el-dialog__headerbtn"><i class="el-dialog__close el-icon el-icon-close"></i></button></div>
+                <!---->
+                <div class="el-dialog__footer"><span class="dialog-footer"><button type="button" class="el-button el-button--default"><!----><!----><span>取 消</span></button> <button type="button" class="el-button el-button--primary"><!----><!----><span>确 定</span></button></span>
+                </div>
+            </div>
+        </div>
+        <div class="el-dialog__wrapper" style="display: none;">
+            <div role="dialog" aria-modal="true" aria-label="dialog" class="el-dialog el-dialog--center dialog_agent_depart" style="margin-top: 15vh; width: 300px;">
+                <div class="el-dialog__header"><span class="el-dialog__title"></span><button type="button" aria-label="Close" class="el-dialog__headerbtn"><i class="el-dialog__close el-icon el-icon-close"></i></button></div>
+                <!---->
+                <div class="el-dialog__footer"><span class="dialog-footer"><button type="button" class="el-button el-button--default"><!----><!----><span>取 消</span></button> <button type="button" class="el-button el-button--primary"><!----><!----><span>确 定</span></button></span>
+                </div>
+            </div>
+        </div>
+        <!---->
+        <div class="el-dialog__wrapper" style="display: none;">
+            <div role="dialog" aria-modal="true" aria-label="dialog" class="el-dialog" style="margin-top: 15vh; width: 80%;">
+                <div class="el-dialog__header"><span class="el-dialog__title"></span>
+                    <!---->
+                </div>
+                <!---->
+                <!---->
+            </div>
+        </div>
+        <div>
+            <div class="el-dialog__wrapper" style="display: none;">
+                <div role="dialog" aria-modal="true" aria-label="dialog" class="el-dialog submit_layer" style="margin-top: 15vh;">
+                    <div class="el-dialog__header"><span class="el-dialog__title"></span>
+                        <!---->
+                    </div>
+                    <!---->
+                    <!---->
+                </div>
+            </div>
+        </div>
+    </div><iframe id="printCasLogout" style="display: none;" src="./index_files/saved_resource.html"></iframe>
+    <script>
+        if (window.location.href.indexOf("debug=1") !== -1) {
+            var jsScript = document.createElement("script");
+            jsScript.src = "/v2/static/js/common/vconsole.min.js";
+            jsScript.type = "text/javascript";
+            jsScript.async = false;
+            jsScript.onload = function() {
+                var vConsole = new VConsole();
+            };
+
+            document.getElementsByTagName("body")[0].appendChild(jsScript);
+        }
+    </script>
+    <!-- <div id="progress_loading">
+        <div style="width: 98%;"></div>
+    </div>
+    <div id="progress_loading">
+        <div style="width: 98%;"></div>
+    </div>
+    <div id="progress_loading">
+        <div style="width: 98%;"></div>
+    </div>
+    <div id="progress_loading">
+        <div style="width: 98%;"></div>
+    </div>
+    <div id="progress_loading">
+        <div style="width: 98%;"></div>
+    </div>
+    <div id="progress_loading">
+        <div style="width: 98%;"></div>
+    </div>
+    <div id="progress_loading">
+        <div style="width: 98%;"></div>
+    </div>
+    <div id="progress_loading">
+        <div style="width: 98%;"></div>
+    </div>
+    <div id="progress_loading">
+        <div style="width: 98%;"></div>
+    </div>
+    <div id="progress_loading">
+        <div style="width: 98%;"></div>
+    </div>
+    <div id="progress_loading">
+        <div style="width: 98%;"></div>
+    </div>
+    <div id="progress_loading">
+        <div style="width: 98%;"></div>
+    </div>
+    <div id="progress_loading">
+        <div style="width: 98%;"></div>
+    </div>
+    <div id="progress_loading">
+        <div style="width: 98%;"></div>
+    </div>
+    <div id="progress_loading">
+        <div style="width: 98%;"></div>
+    </div>
+    <div id="progress_loading">
+        <div style="width: 98%;"></div>
+    </div>
+    <div id="progress_loading">
+        <div style="width: 98%;"></div>
+    </div>
+    <div id="progress_loading" style="display: none;">
+        <div style="width: 0%;"></div> -->
+    <img id="visits_collect" src="file:///C:/Users/Jerry/Desktop/JerryZhangZZY.github.io-main/index_files/collect" style="display: none;">
+    <div class="el-loading-mask is-fullscreen" style="z-index: 2000; display: none;">
+        <div class="el-loading-spinner"><svg viewBox="25 25 50 50" class="circular"><circle cx="50" cy="50" r="20" fill="none" class="path"></circle></svg>
+            <!---->
+        </div>
+    </div>
+
+
+
+</body></html>
